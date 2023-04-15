@@ -14,7 +14,7 @@ Products within host : http://localhost:3000/product/12345
 Pages and components are styled using Chakra UI (and Chakra Templates).
 
 ## Getting started
-Take a checkout of this repo
+Take a checkout of this repo and at the root level run the commands:
 
 `npm i`
 
