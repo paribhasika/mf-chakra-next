@@ -55,6 +55,9 @@ export const ProductTemplate = ({ productId }: ProductTemplateProps) => {
               <Text color={'gray.900'} fontWeight={300} fontSize={'2xl'}>
                 $350.00 USD
               </Text>
+              <Text color={'gray.900'} fontWeight={300} fontSize={'lg'}>
+                Product ID : {productId}
+              </Text>
             </Box>
 
             <Stack
