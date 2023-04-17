@@ -36,7 +36,9 @@
     "lint-staged": "^13.0.3",
     "prettier": "^2.7.1",
     "rimraf": "^3.0.2",
-    "turbo": "latest"
+    "turbo": "latest",
+    "@swc/core": "^1"
+
   },
   "overrides": {
     "react": "^18.2.0",
