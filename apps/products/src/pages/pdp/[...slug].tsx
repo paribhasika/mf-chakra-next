@@ -50,7 +50,7 @@ export const ProductTemplate = ({ productId }: ProductTemplateProps) => {
                 fontWeight={600}
                 fontSize={{ base: '2xl', sm: '4xl', lg: '5xl' }}
               >
-                <Text as="b"> Automatic Watch</Text>
+                <Text as="b"> Automatic Watch {productId}</Text>
               </Heading>
               <Text color={'gray.900'} fontWeight={300} fontSize={'2xl'}>
                 $350.00 USD

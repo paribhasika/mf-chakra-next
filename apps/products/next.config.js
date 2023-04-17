@@ -23,11 +23,21 @@ module.exports = {
                 requiredVersion: false,
                 singleton: true,
               },
+                '@emotion/core': {
+                  singleton: true,
+                },
+                '@emotion/styled': {
+                  singleton: true,
+                },
               '@chakra-ui/': {
                 eager: true,
                 requiredVersion: false,
                 singleton: true,
               },
+              '@chakra-ui/react':{
+                singleton: true,
+
+              }
             }
       })
     );
