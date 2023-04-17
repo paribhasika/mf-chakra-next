@@ -1,11 +1,11 @@
 import { GetServerSideProps } from 'next/types';
 
 import dynamic from 'next/dynamic';
+import React, { Suspense, lazy } from 'react';
 
 // @ts-ignore
-const ProductDetailsPage = dynamic(() => import('products/pdp'), {
-  ssr: true,
-});
+
+const ProductDetailsPage = lazy(() => import('products/pdp'));
 
 export const getServerSideProps: GetServerSideProps = async (ctx) => {
   // @ts-ignore
