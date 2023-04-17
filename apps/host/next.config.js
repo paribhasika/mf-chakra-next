@@ -1,4 +1,6 @@
 const NextFederationPlugin = require('@module-federation/nextjs-mf');
+const PRODUCTS_URL =
+  process.env.NEXT_PUBLIC_PRODUCTS_APP_URL || 'http://localhost:3001';
 
 module.exports = {
   reactStrictMode: true,
@@ -15,7 +17,7 @@ module.exports = {
           name: 'host',
           filename: 'static/chunks/remoteEntry.js',
           remotes: {
-            products:`products@http://localhost:3001/_next/static/${options.isServer?'ssr':'chunks'}/remoteEntry.js`,
+            products:`products@${PRODUCTS_URL}/_next/static/${options.isServer?'ssr':'chunks'}/remoteEntry.js`,
             },
           exposes: {},
           shared: {
